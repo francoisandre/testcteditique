@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>info.francoisandre</groupId>
+	<artifactId>testcteditique</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<parent>
+		<groupId>fr.gouv.education.sirhen.programme</groupId>
+		<artifactId>programme-sirhen-j2ee-mae-service</artifactId>
+		<version>6.V3.0.4</version>
+	</parent>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>fr.gouv.education.sirhen.ct</groupId>
+			<artifactId>ct-editique</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>fr.gouv.education.sirhen.ct</groupId>
+			<artifactId>ct-socle</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.adobe</groupId>
+			<artifactId>livecycle-client</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.adobe</groupId>
+			<artifactId>livecycle-client</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe</groupId>
+			<artifactId>usermanager-client</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe</groupId>
+			<artifactId>assembler-client</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe</groupId>
+			<artifactId>adobe-generatepdf-client</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe</groupId>
+			<artifactId>adobe-utilities</artifactId>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.xbean</groupId>
+				<artifactId>maven-xbean-plugin</artifactId>
+			</plugin>
+		</plugins>
+
+	</build>
+
+
+</project>
